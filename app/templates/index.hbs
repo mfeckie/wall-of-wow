@@ -1,0 +1,26 @@
+<body>
+    <header>
+         <h1>WALL OF WOW</h1>
+         <h2>Welcome to HotDoc's appreciation board!</h2>
+
+    </header>
+    
+    <section class="appreciation-list">
+        {{#each model as |appreciation|}}
+        <div class="appreciation">
+            <div class="appreciation-name">
+                {{appreciation.name}}
+            </div>
+            <div class="appreciation-body">
+                {{appreciation.body}}
+            </div>
+        </div>
+        {{/each}}        
+    </section>
+
+    <footer>
+        Made by The Weeknd
+    </footer>
+</body>
+
+
