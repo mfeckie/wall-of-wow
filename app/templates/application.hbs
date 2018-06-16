@@ -19,6 +19,11 @@
   </section>
 
   <footer>
-    Made by The Weeknd
+    <div class="weeknd">
+      <p {{action send "clickWeeknd"}}>Made by The Weeknd</p>
+
+      {{#if showWeeknd}}
+      <img src="/assets/images/Weeknd.jpg" /> {{/if}}
+    </div>
   </footer>
 </body>
